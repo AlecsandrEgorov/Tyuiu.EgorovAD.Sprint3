@@ -9,7 +9,7 @@ namespace Tyuiu.EgorovAD.Sprint3.Task3.V25
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            string value = " kjhgfuu gujut dtuu";
+            string value = " u";
             char chr = 'u';
             Console.WriteLine("Исходная строка:" + value);
             Console.WriteLine("Исходный символ:" + chr);
