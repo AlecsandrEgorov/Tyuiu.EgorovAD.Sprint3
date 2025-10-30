@@ -5,7 +5,7 @@ namespace Tyuiu.EgorovAD.Sprint3.Task1.V26
     {
         static void Main(string[] args)
         {
-           DataService ds = new DataService();
+            DataService ds = new DataService();
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
@@ -14,7 +14,7 @@ namespace Tyuiu.EgorovAD.Sprint3.Task1.V26
             int value = 5;
             int startValue = 1;
             int stopValue = 8;
-            
+
 
             Console.WriteLine("Переменная x = " + value);
             Console.WriteLine("от  " + startValue);
@@ -26,7 +26,6 @@ namespace Tyuiu.EgorovAD.Sprint3.Task1.V26
 
             Console.WriteLine("Ответ:" + ds.GetSumSeries(value, startValue, stopValue));
             Console.ReadKey();
-
         }
     }
 }
