@@ -8,11 +8,11 @@ namespace Tyuiu.EgorovAD.Sprint3.Task3.V25.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            string str = "tughghurghhu";
+            string str = "tughghuurghhu";
             char chr = 'u';
 
             double res = ds.GetMinCharCount(str, chr);
-            int wait = 3;
+            int wait = 1;
             Assert.AreEqual(wait, res);
         }
     }
