@@ -11,7 +11,7 @@ namespace Tyuiu.EgorovAD.Sprint3.Task1.V26.Lib
                 jut += Math.Pow(6 / Math.Pow(value, startValue), 2);
                 startValue++;
             }
-            return Math.Round(jut, 3);
+            return Math.Round(jut, 3); // ответ
         }
     }
 }
