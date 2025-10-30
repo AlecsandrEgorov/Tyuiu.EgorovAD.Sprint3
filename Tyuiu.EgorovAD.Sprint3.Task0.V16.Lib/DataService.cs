@@ -9,10 +9,10 @@ namespace Tyuiu.EgorovAD.Sprint3.Task0.V16.Lib
             int i;
             for ( i = startValue; i <= stopValue; i++)
             {
-                Eseries = Eseries * (Math.Pow(value, 3) / Math.Pow(startValue, 3));
-
+                double term = (double)value / i;
+                Eseries *= Math.Pow(term, 3);
             }
-            return Eseries;
+            return Math.Round(Eseries,3);
         }
         
     }
