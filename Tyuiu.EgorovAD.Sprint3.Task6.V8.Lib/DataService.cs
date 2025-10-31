@@ -5,25 +5,24 @@ namespace Tyuiu.EgorovAD.Sprint3.Task6.V8.Lib
     {
         public int GetSumTheDivisors(int startValue, int stopValue)
         {
-            int x;
-            int sum = 0;
-            int sum2 = 0;
-            for (x = startValue; x <= stopValue; x++)
+            int totalSum = 0;
+
+            for (int x = startValue; x <= stopValue; x++)
             {
-                for (int d  = 1; d <= x; d++)
+                int numberSum = 0;
+
+                for (int d = 1; d <= x; d++)
                 {
-                    if (x % d == 0) 
+                    if (x % d == 0 && d > 11)
                     {
-                        sum += d;
-                        if ( sum >= 11)
-                        {
-                            sum2 += d;
-                            sum = 0;
-                        }
+                        numberSum += d;
                     }
                 }
+
+                totalSum += numberSum;
             }
-            return sum2;
+
+            return totalSum;
         }
     }
 }
